@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="content_log">
+    <div class="card">
+        <h3 class="card-title">Registros</h3>
+        <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Fecha y hora</th>
+                <th scope="col">Metodo</th>
+                <th scope="col">Peticion</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let log of logs; let i = index">
+                    <th> {{i+1}} </th>
+                    <td> {{log.date}} </td>
+                    <td> {{log.method}} </td>
+                    <td> {{log.petition}} </td>
+                    <td> {{log.status}} </td>
+                  </tr>
+            </tbody>
+          </table>
+    </div>
+    <button routerLink="/main-page" class="btn btn-primary btn-lg">Volver a noticias</button>
+    
+</div>

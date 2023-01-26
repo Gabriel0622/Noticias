@@ -1,0 +1,29 @@
+<body>
+    <div class="scroll-area" >
+      
+        <div class="card  w-55"*ngFor="let itemNews of news; let i = index">
+            <div class="card-body">
+              <h3 class="card-title">{{itemNews.title}}</h3>
+              <h4> {{itemNews.author}}</h4>
+              <p class="card-text">{{itemNews.description}}</p>
+              <a [routerLink]="['/detailed-news/',paginationPos,i]" class="btn btn-primary">Ver noticia completa</a>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item" *ngFor="let number of numbers; let i = index">
+                <div *ngIf="isPageActive(i+1); else elseBlock">
+                    <a class="page-link active" (click)="changePage(i+1)">{{i+1}}</a>
+                </div>
+                <ng-template #elseBlock>
+                    <a class="page-link" (click)="changePage(i+1)">{{i+1}}</a>
+                </ng-template>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+
+
+

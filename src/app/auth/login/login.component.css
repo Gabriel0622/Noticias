@@ -1,0 +1,36 @@
+.background_login{
+    background-color: #4285F4;
+    width: 98.9vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    width: 20%;
+    height: 60%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    margin: 10px;
+}
+
+button{
+    margin: 20px;
+}

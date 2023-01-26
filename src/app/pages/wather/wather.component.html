@@ -1,0 +1,26 @@
+<body>
+    <div class="card" style="width: 25rem; height: 82vh;">
+        <img class="card-img-top" src="https://blogs.iadb.org/ciudades-sostenibles/wp-content/uploads/sites/17/2016/04/cali-3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title">{{weather.city}}</h2>
+          <h4 class="card-text">{{weather.country}}</h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <span><img src="../../../assets/weather.png" alt="time_icon" class="icon_weather"></span>
+            Tiempo: {{weather.time}}
+        </li>
+          <li class="list-group-item">
+            <span><img src="../../../assets/temperatura.png" alt="time_icon" class="icon_weather"></span>
+            Temperatura: {{weather.temperature }}°C
+        </li>
+          <li class="list-group-item">
+            <span><img src="../../../assets/humedad.png" alt="time_icon" class="icon_weather"></span>
+            Humedad: {{weather.humidity }}%
+        </li>
+        </ul>
+        <div class="card-body">
+            <button class="btn btn-primary btn">Actualizar clima</button>
+        </div>
+      </div>
+</body>

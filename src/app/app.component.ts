@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'FE_Portal_Noticias';
+  title = 'Echendi noticias y clima';
 }

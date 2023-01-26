@@ -1,0 +1,8 @@
+.content{
+    display: flex;
+    height: 88vh;
+}
+.card{
+    width: 55rem;
+    margin: 10px 187px 10px 187px;
+}

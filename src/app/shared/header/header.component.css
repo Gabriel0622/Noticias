@@ -1,0 +1,31 @@
+header{
+    display: flex;
+    align-items: center;
+    background-color: #4285F4;
+    width: 98.9vw;
+    height: 90px;
+}
+
+h1{
+    color: white;
+    margin: 5px 10px 5px 10px;
+}
+.world_icon{
+    width: 5%;
+    filter: invert(100%);
+    margin: 10px;
+}
+
+.report_icon{
+    width: 6%;
+    margin: 20px;
+    border-radius: 45px;
+}
+
+.user_content{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: aliceblue;
+}
